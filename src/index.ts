@@ -78,3 +78,31 @@ while (numeroPar <= 20) {
 
 // 8. Crie um array numeros: number[] com pelo menos 5 valores e utilize um loop for...of para somar todos os elementos, exibindo o total ao final. 
 
+const numeros:number[] = [5, 4, 3, 2, 1];
+let soma: number = 0;
+
+for (const numero of numeros) {
+    soma += numero;
+}
+
+console.log(soma);
+
+// 9. Utilize um loop for combinado com uma condicional para exibir apenas os números ímpares entre 1 e 15. 
+
+for (let i: number = 1; i < 16; i++) {
+    if (i % 2 != 0) {
+        console.log(i);
+    }
+}
+
+// 10. Desafio: combine tudo o que foi visto — crie um array de números, percorra com um loop e, para cada número, utilize uma condicional para classificá-lo como "par" ou "ímpar", exibindo o resultado no console.
+
+let combinado: number[] = [10, 40, 11, 34, 33, 80, 83, 103, 58, 180, 287, 11, 2, 36, 89, 90];
+
+for (const numero of combinado) {
+    if (numero % 2 != 0) {
+        console.log(numero, " : ímpar");
+    } else {
+        console.log(numero, " : par");
+    }
+}
